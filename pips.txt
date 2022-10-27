@@ -46,3 +46,6 @@ pip install djangorestframework
 
 
 http://127.0.0.1:8000/chart/api/ChartJS/
+
+
+pip install pandas
