@@ -10,3 +10,34 @@ python -m django --version
 4.1.2
 
 pip freeze
+
+django-admin startproject DjangoChart # projekt
+cd DjangoChart
+python manage.py startapp ChartJS
+
+models.py
+
+cd DjangoChart
+python manage.py makemigrations ChartJS
+
+No installed app with label 'ChartJS'.
+
+settings.py -> INSTALLED_APPS
+'ChartJS.apps.ChartjsConfig',
+
+python manage.py makemigrations ChartJS
+python manage.py migrate
+
+python manage.py runserver
+http://127.0.0.1:8000/admin
+
+cd DjangoChart
+python manage.py createsuperuser
+
+JS
+Mamdostep1!
+
+
+admin.py ->
+from .models import Chart
+admin.site.register(Chart)
